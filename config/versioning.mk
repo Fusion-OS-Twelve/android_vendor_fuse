@@ -20,6 +20,12 @@
 PLATFORM_FUSE_RELEASE := 3.5-Aqua
 PLATFORM_FUSE_VERSION := $(PLATFORM_FUSE_RELEASE).$(shell date +%m%d%H%M)
 
+ifeq ($(WITH_GAPPS),true)
+    BUILD_TYPE := GAPPS
+else
+    BUILD_TYPE := VANILLA
+endif
+
 TARGET_PRODUCT_SHORT := $(subst fuse_,,$(TARGET_DEVICE))
 
 ifeq ($(FUSE_BUILD_VARIANT),OFFICIAL)
