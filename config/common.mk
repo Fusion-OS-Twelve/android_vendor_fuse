@@ -39,7 +39,12 @@ PRODUCT_PACKAGES += \
     ThemePicker \
     Launcher3 \
     FuseWalls \
-    GameSpace
+    ExactCalculator \
+    DeskClock \
+    LatinIME \
+    messaging \
+    Contacts \
+    Dialer
 
 # World APN list
 PRODUCT_PACKAGES += \
